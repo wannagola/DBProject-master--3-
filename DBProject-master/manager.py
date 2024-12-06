@@ -89,7 +89,7 @@ class Manager(Base):
             if not pending_consultants:
                 print("인증 대기 중인 컨설턴트가 없습니다.")
                 return
-
+            # 목록 표시하기
             print("\n***** 인증 대기 컨설턴트 목록 *****\n")
             for idx, c in enumerate(pending_consultants, start=1):
                 print(f"{idx}. ID: {c.cid}, 이름: {c.fullname}")
