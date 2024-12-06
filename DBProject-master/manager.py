@@ -82,6 +82,7 @@ class Manager(Base):
         - Consultant 모델에 certification_status 컬럼이 있어 'pending', 'approved', 'rejected' 등의 상태를 가짐.
         """
         session = Session()
+        
         try:
             # 인증 대기 중인 컨설턴트 목록 조회
             pending_consultants = session.query(Consultant).filter_by(certification_status='pending').all()

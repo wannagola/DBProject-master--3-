@@ -26,7 +26,7 @@ CREATE TABLE customer (
     email VARCHAR(50) NOT NULL,
     fullname VARCHAR(5) NOT NULL,
     expected_tax NUMERIC(10,0),
-    verification VARCHAR(10) -- customer.py 내 verification 컬럼 반영
+    verification VARCHAR(10) -- customer.py 내 verification 컬럼 반영하기
 );
 
 CREATE TABLE consultant (
